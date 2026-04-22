@@ -1,21 +1,24 @@
-class transaction:
-    TYPES_VALIDES =("débit", "crédit")
+from datetime import datetime
+
+
+class Transaction:
+    TYPES_VALIDES = ("débit", "crédit")
+
     def __init__(
         self,
         montant: float,
-        description:str,
-        type_transaction=: str = "débit",
+        description: str,
+        date,
+        type_transaction: str = "débit",
         categorie: str = "Non catégorisé",
         id_transaction=None,
-
     ):
         self._id = id_transaction
         self.montant = montant
         self._description = description.strip()
         self.date = date
         self.type_transaction = type_transaction
-        self._categorie = categorie
-         # ── Propriétés ──────────────────────────────────────────────────────────
+        self._categorie = categorie.strip()
 
     # ── Propriétés ──────────────────────────────────────────────────────────
 
@@ -26,7 +29,8 @@ class transaction:
     @property
     def montant(self):
         return self._montant
-         @montant.setter
+
+    @montant.setter
     def montant(self, valeur):
         if not isinstance(valeur, (int, float)):
             raise TypeError(f"Montant doit être numérique, reçu : {type(valeur)}")
@@ -53,7 +57,7 @@ class transaction:
                 return
             except ValueError:
                 continue
-        raise ValueError(f"Format de date invalide : '{valeur}'. Utilisez YYYY-MM-DD.")
+        raise ValueError(f"Format de date invalide : '{valeur}'")
 
     @property
     def type_transaction(self):
@@ -121,7 +125,3 @@ class transaction:
             categorie=donnees.get("categorie", "Non catégorisé"),
             id_transaction=int(donnees["id"]) if donnees.get("id") else None,
         )
-
-
-
-    

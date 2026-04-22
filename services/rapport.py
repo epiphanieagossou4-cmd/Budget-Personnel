@@ -97,7 +97,7 @@ class GenerateurRapport:
 
         return {
             "budget_nom":    self._budget.nom,
-            "solde":         self._budget.solde_total(),
+ "solde":         self._budget.solde_total(),
             "total_debits":  self._budget.total_debits(),
             "total_credits": self._budget.total_credits(),
             "taux_epargne":  self._budget.taux_epargne(m),

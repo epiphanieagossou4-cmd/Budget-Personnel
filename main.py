@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-"""
-main.py — Point d'entrée CLI du Moniteur de Budget
-Projet 6 : Moniteur de Budget Personnel (Fintech)
-Bloc 2 & 3 — Workflow, Fondations, Architecture POO
-"""
 
 import sys
 import os
