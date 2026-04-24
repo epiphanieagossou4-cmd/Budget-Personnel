@@ -1,0 +1,38 @@
+=== RÉSUMÉ ===
+Budget,Mon Budget
+Mois,2025-04
+Nb transactions,9
+Total dépenses (FCFA),108700.0
+Total revenus (FCFA),95000.0
+Solde (FCFA),-13700.0
+Taux épargne (%),-14.4
+
+=== DÉPENSES PAR CATÉGORIE ===
+Catégorie,Montant (FCFA),% du total
+Logement,45000.0,41.4
+Éducation,20000.0,18.4
+Épargne,15000.0,13.8
+Non catégorisé,12500.0,11.5
+Santé,8000.0,7.4
+Transport,5000.0,4.6
+Alimentation,3200.0,2.9
+
+=== TOP 5 DÉPENSES ===
+Rang,Date,Montant (FCFA),Catégorie,Description
+1,2025-04-08,45000.0,Logement,Loyer studio Parakou
+2,2025-04-14,20000.0,Éducation,Frais scolaires Python
+3,2025-04-15,15000.0,Épargne,Virement epargne
+4,2025-04-03,12500.0,Non catégorisé,Supermarche Erevan
+5,2025-04-12,8000.0,Santé,Pharmacie medicaments
+
+=== DÉTAIL DES TRANSACTIONS ===
+ID,Date,Montant,Type,Catégorie,Description
+1,2025-04-01,85000.0,crédit,Revenus,Salaire mensuel IUT
+2,2025-04-03,12500.0,débit,Non catégorisé,Supermarche Erevan
+3,2025-04-05,5000.0,débit,Transport,Carburant moto
+4,2025-04-08,45000.0,débit,Logement,Loyer studio Parakou
+5,2025-04-10,3200.0,débit,Alimentation,Restaurant gbeglo
+6,2025-04-12,8000.0,débit,Santé,Pharmacie medicaments
+7,2025-04-14,20000.0,débit,Éducation,Frais scolaires Python
+8,2025-04-15,15000.0,débit,Épargne,Virement epargne
+9,2025-04-18,10000.0,crédit,Revenus,Remboursement ami
